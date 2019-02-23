@@ -20,7 +20,7 @@ export default {
     },
     bgColor: {
       type: String,
-      default: () => '#f00'
+      default: () => '#e63a3e'
     },
     type: {// up , under
       type: String,
@@ -79,4 +79,7 @@ export default {
                 color #ffffff
             .owly-cover-backgroud
                 top 0
+        @media screen and (max-width: 768px)
+          .owly-cover-backgroud
+            background rgba(0,0,0,.4)
 </style>

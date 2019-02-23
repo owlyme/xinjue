@@ -93,7 +93,7 @@ export default {
             text-align center
             position: absolute;
             right: 25px;
-            bottom: 30px;
+            bottom: 20px;
             font-size: 16px;
             line-height: 30px;
             width: 32px;

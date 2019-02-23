@@ -1,16 +1,17 @@
 <template>
-    <div class="s-title text-center" >
-        <h1>WHAT CAN WE DO</h1>
-        <h2>我们能为您做些什么</h2>
-        <p>从PC到移动互联，武汉汇海投资集团网络科技有限公司打造一个全方位互联网营销体系</p>
+    <div class="s-title text-center" :style="{background: bgColor}">
+        <slot></slot>
     </div>
 </template>
 
 <script>
 export default {
   name: 'main-title',
-  components: {
-
+  props: {
+    bgColor: {
+      type: String,
+      default: ''
+    }
   },
   data () {
     return {
@@ -20,5 +21,20 @@ export default {
 </script>
 
 <style lang="stylus">
-
+  .s-title
+    padding: 50px 0
+    background: #fff
+    h1
+      font-family: Roboto;
+      color: #666;
+      font-size: 36px;
+      font-weight: 100;
+    h2
+      font-size: 20px;
+      margin: 0 auto;
+      padding: 10px 15px;
+    p
+      font-size: 12px;
+      color: #aaa;
+      padding: 0 15px;
 </style>

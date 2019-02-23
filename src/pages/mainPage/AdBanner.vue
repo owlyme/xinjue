@@ -3,18 +3,6 @@
         <div class="ad-banner-item">
             <ad-card></ad-card>
         </div>
-        <div class="ad-banner-item">
-            <ad-card></ad-card>
-        </div>
-        <div class="ad-banner-item">
-            <ad-card></ad-card>
-        </div>
-        <div class="ad-banner-item">
-            <ad-card></ad-card>
-        </div>
-        <div class="ad-banner-item">
-            <ad-card></ad-card>
-        </div>
     </div>
 </template>
 
@@ -33,18 +21,17 @@ export default {
         display flex
         justify-content center
         flex-wrap wrap
-    @media screen and (max-width: 9999px)
         .ad-banner-item
             padding 10px
+    @media screen and (max-width: 9999px)
+        .ad-banner-item
             width 25%
 
     @media screen and (max-width: 1200px)
         .ad-banner-item
-            padding 10px
             width 33.3333%
 
     @media screen and (max-width: 992px)
         .ad-banner-item
-            padding 10px
             width 50%
 </style>
