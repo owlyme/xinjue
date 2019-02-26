@@ -18,7 +18,7 @@ export default new Router({
     {
       path: '/service',
       name: 'service',
-      component: () => import('@/pages/mainPage/index.vue')
+      component: () => import('@/pages/service/index.vue')
     },
     {
       path: '/case',
@@ -31,9 +31,9 @@ export default new Router({
       component: () => import('@/pages/mainPage/index.vue')
     },
     {
-      path: '/concatus',
-      name: 'concatus',
-      component: () => import('@/pages/mainPage/index.vue')
+      path: '/contact',
+      name: 'contact',
+      component: () => import('@/pages/contact/index.vue')
     }
   ]
 })

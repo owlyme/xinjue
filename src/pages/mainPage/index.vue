@@ -8,6 +8,7 @@
           <h2>我们能为您做些什么</h2>
           <p>从PC到移动互联，武汉汇海投资集团网络科技有限公司打造一个全方位互联网营销体系</p>
         </main-title>
+
         <card-list></card-list>
 
         <main-title>
@@ -17,9 +18,9 @@
           <p>我们做网站更懂百度，我们更懂精准营销，我们在网站方面更懂你</p>
           <casList></casList>
         </main-title>
-
         <ad-banner></ad-banner>
-        <view-more href="www.baidu.com"></view-more>
+
+        <view-more url="/aboutus"></view-more>
 
         <main-title>
           <h1>SOLUTION</h1>
@@ -49,14 +50,14 @@ export default {
   components: {
     mainHeader: () => import('@/layout/header'),
     carousel: () => import('./carousel'),
-    mainTitle: () => import('./title'),
+    mainTitle: () => import('@/components/title'),
     casList: () => import('./casList'),
     cardList: () => import('./cardList'),
     newsList: () => import('./newsList'),
     adBanner: () => import('./AdBanner'),
     viewMore: () => import('@/components/translationUp'),
     solutionList: () => import('./solutionList'),
-    mainFooter: () => import('./footer')
+    mainFooter: () => import('@/layout/footer')
   },
   data () {
     return {

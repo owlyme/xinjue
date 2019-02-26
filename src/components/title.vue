@@ -23,7 +23,6 @@ export default {
 <style lang="stylus">
   .s-title
     padding: 50px 0
-    background: #fff
     h1
       font-family: Roboto;
       color: #666;
@@ -33,6 +32,8 @@ export default {
       font-size: 20px;
       margin: 0 auto;
       padding: 10px 15px;
+    > div
+      margin-bottom 15px
     p
       font-size: 12px;
       color: #aaa;

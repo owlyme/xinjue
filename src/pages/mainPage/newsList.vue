@@ -12,6 +12,17 @@
 export default {
   components: {
     newsCard: () => import('./components/newsCard')
+  },
+  data () {
+    return {
+      list: [
+        {
+          title: '',
+          info: [],
+          url: ''
+        }
+      ]
+    }
   }
 }
 </script>

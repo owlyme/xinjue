@@ -1,17 +1,17 @@
 <template>
-    <div class="card-container" @click="routerLink(data.url)">
+    <div class="qq-card-container">
+        <a target="_blank" :href="`http://wpa.qq.com/msgrd?v=3&amp;uin=${data.qq}&amp;site=qq&amp;menu=yes`">
         <div class="card-img center-middle">
             <strong class="icon big-icon" v-html="data.icon"></strong>
         </div>
         <h1 class="card-title center-middle">{{data.title}}</h1>
         <p class="card-profile">策划、设计、前端、程序开发全方位一条龙服务充分了解企业文化、行业特点，体现企业特色.设计师一对一沟通，充分了解你的需求和想法。时刻掌握新技术动向，打造高品质网站。 </p>
         <div class="label-list">
-            <div class="label-item" v-for="(item, index) in data.labels" :key="index">
-                <grow>
-                    <span>{{item}}</span>
-                </grow>
-            </div>
+            <button>
+                点击咨询
+            </button>
         </div>
+        </a>
     </div>
 </template>
 
@@ -26,18 +26,13 @@ export default {
     return {
     }
   },
-  props: ['data'],
-  methods: {
-    routerLink (url) {
-      this.$router.push({path: url})
-    }
-  }
+  props: ['data']
 
 }
 </script>
 
 <style lang="stylus">
-.card-container
+.qq-card-container
     background #ffffff
 
     &:hover .card-img .big-icon

@@ -1,5 +1,6 @@
 <template>
     <b-navbar
+      :style="{positon: nofixed ? 'relative' : ''}"
       class="main-page-header"
       :class="{'small': showToggle,
                'big': !showToggle
@@ -16,12 +17,22 @@
         <b-navbar-nav class="ml-auto">
           <b-nav-item href="#">
               <grow height="1" :bgColor="growBg" :color="growColor" class='nav-item'>
-              <div class="nav-item-text">主页</div>
-          </grow>
+                <router-link class="nav-item-text" to="/">主页</router-link>
+              </grow>
           </b-nav-item>
           <b-nav-item href="#" >
               <grow height="1" :bgColor="growBg" :color="growColor" class='nav-item'>
-                <div class="nav-item-text">关于我们</div>
+                  <router-link class="nav-item-text" to="/aboutus">关于我们</router-link>
+              </grow>
+          </b-nav-item>
+          <b-nav-item href="#" >
+              <grow height="1" :bgColor="growBg" :color="growColor" class='nav-item'>
+                  <router-link class="nav-item-text" to="/service">服务项目</router-link>
+              </grow>
+          </b-nav-item>
+          <b-nav-item href="#" >
+              <grow height="1" :bgColor="growBg" :color="growColor" class='nav-item'>
+                  <router-link class="nav-item-text" to="/contact">联系我们</router-link>
               </grow>
           </b-nav-item>
         </b-navbar-nav>
@@ -33,6 +44,12 @@
 import windowResize from '@/utils/domEvent.js'
 export default {
   name: 'main-header',
+  props: {
+    nofixed: {
+      type: Boolean,
+      default: false
+    }
+  },
   components: {
     grow: () => import('@/components/grow')
   },
@@ -104,11 +121,5 @@ export default {
           vertical-align: middle;
           content: "";
           background-size: 100% 100%;
-  // .nav-item
-  //   background: 0;
-  //   color: #fff;
-  //   margin 0 10px
-  //   padding  0 10px
-  //   cursor pointer
 
 </style>

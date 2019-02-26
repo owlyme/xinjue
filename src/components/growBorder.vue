@@ -21,6 +21,10 @@ export default {
     bgColor: {
       type: String,
       default: () => '#f00'
+    },
+    height: {
+      type: String,
+      default: () => '#f00'
     }
   },
   data () {
