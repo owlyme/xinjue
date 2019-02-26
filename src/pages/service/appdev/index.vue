@@ -12,9 +12,9 @@
       </div>
 
       <mainTitle class="bgGray">
-      <h2 class="font-weight">汇海APP解决方案</h2>
+      <h2 class="font-weight">新珏APP解决方案</h2>
       <div class="fn24 color333 fnw100">APP Solutions</div>
-      <p>武汉汇海集团致力于为中国企业提供全面互联网电子商务解决方案，包括网站建设，移动手机APP开发、 互联网营销推广服务，是国内互联</p>
+      <p>杭州新珏科技致力于为中国企业提供全面互联网电子商务解决方案，包括网站建设，移动手机APP开发、 互联网营销推广服务，是国内互联</p>
       </mainTitle>
 
       <div class="margin30">
@@ -22,7 +22,7 @@
       </div>
 
       <mainTitle class="margin30">
-      <h2>汇海APP建设流程</h2>
+      <h2>新珏APP建设流程</h2>
       <div class="fn24 color333 fnw100">Construction process</div>
       <p>互联网将连接一切，数据将我们变得更理性，智能应用将生活变得便捷</p>
       </mainTitle>

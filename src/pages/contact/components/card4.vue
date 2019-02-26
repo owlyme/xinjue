@@ -5,9 +5,9 @@
             <strong class="icon big-icon" v-html="data.icon"></strong>
         </div>
         <h1 class="card-title center-middle">{{data.title}}</h1>
-        <p class="card-profile">策划、设计、前端、程序开发全方位一条龙服务充分了解企业文化、行业特点，体现企业特色.设计师一对一沟通，充分了解你的需求和想法。时刻掌握新技术动向，打造高品质网站。 </p>
+        <p class="card-profile">{{data.info}}}</p>
         <div class="label-list">
-            <button>
+            <button class="btn btn-block btn-default">
                 点击咨询
             </button>
         </div>
@@ -33,19 +33,35 @@ export default {
 
 <style lang="stylus">
 .qq-card-container
+    padding 10px
+    border 1px solid #eee
     background #ffffff
 
     &:hover .card-img .big-icon
         color #ffffff
         background #e63a3e
         box-shadow: 0 1px 5px #888888
+    a {
+        color: #999;
+        text-decoration: none;
+    }
+    a:hover {
+        color: #0056b3;
+        text-decoration: none;
+    }
+    .btn-default
+        color: #333;
+        background-color: #fff;
+        border-color: #ccc;
+        &:hover
+            background-color: #ccc;
     .card-img
         height 120px
         .big-icon
-            width: 90px;
-            height: 90px;
+            width: 60px;
+            height: 60px;
             font-size: 60px;
-            padding-left: 15px;
+            line-height: 60px;
             border-radius: 100%;
             transition all .1s
             &:hover

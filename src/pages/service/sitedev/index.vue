@@ -1,10 +1,10 @@
 <template>
     <div class="servuice-site-page">
       <mainTitle class="margin30">
-      <h2>汇海集团企业网站建设上的解决方案</h2>
+      <h2>新珏科技企业网站建设上的解决方案</h2>
       <h1>SOLUTION</h1>
       <p>企业网站建设的目的是实现企业品牌、文化、信息的传播，并最终为商业的利益服务！所以要有良好的展现形式和视觉定位符合企业的整体文化特征。</p>
-      <p>汇海集团深刻领会企业的深层需求，挖掘企业的每一个风格细节，定制网站往往超出企业最好预期，得到了合作伙伴的极高赞誉！</p>
+      <p>新珏科技深刻领会企业的深层需求，挖掘企业的每一个风格细节，定制网站往往超出企业最好预期，得到了合作伙伴的极高赞誉！</p>
       </mainTitle>
 
       <b-row class="margin30">
@@ -20,22 +20,22 @@
             <b-col xs="12" sm="6" md="3" lg="3">
             <i class="i iconfont-xianshiqi"></i>
             <div>企业网站定制</div>
-            <a rel="nofollow" href="/case/ppgw/">查看案例</a>
+            <a  href="/case/ppgw/">查看案例</a>
             </b-col>
             <b-col xs="12" sm="6" md="3" lg="3">
             <i class="i iconfont-dianpu"></i>
             <div>商城门户开发</div>
-            <a rel="nofollow" href="/case/scmh/">查看案例</a>
+            <a  href="/case/scmh/">查看案例</a>
             </b-col>
             <b-col xs="12" sm="6" md="3" lg="3">
             <i class="i iconfont-phone-android"></i>
             <div>移动应用定制</div>
-            <a rel="nofollow" href="/case/ydyy/">查看案例</a>
+            <a  href="/case/ydyy/">查看案例</a>
             </b-col>
             <b-col xs="12" sm="6" md="3" lg="3">
             <i class="i iconfont-html5"></i>
             <div>HTML5</div>
-            <a rel="nofollow" href="/case/HTML5/">查看案例</a>
+            <a  href="/case/HTML5/">查看案例</a>
             </b-col>
           </b-row>
         </mainTitle>

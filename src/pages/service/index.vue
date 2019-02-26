@@ -1,7 +1,7 @@
 <template>
     <div class="servuice-page bgWhite">
-      <!-- <main-header></main-header> -->
-      <b-row style="background: #465f87; margin-bottom: 120px;justify-content: flex-end;">
+      <main-header></main-header>
+      <b-row style="background: #465f87; padding: 60px 0 120px;justify-content: flex-end;">
         <b-col cols="4" class="visible-md-block visible-lg-block">
           <img style="position: absolute;top: 40px;"
           src="http://www.hhjtwl.com/templets/hhwl/img/banner-pi.png" />
@@ -11,7 +11,7 @@
           <p class="white">多年技术开发与移动互联网行业经验沉淀，集合对二十多个主流行业的深度研究，从根本出发把握您的实际需求做到开发更快捷、更完善，营销更精准、更高效、并实施落地。</p>
         </b-col>
       </b-row>
-      <div class="container badge-container ">
+      <div class="container badge-container">
         <div class="line"></div>
         <b-badge class="bage7" pill
          v-for="(item, index) in ['网站建设','APP开发','微信开发','软件开发','小程序开发']"
@@ -63,6 +63,7 @@ export default {
     .badge-container
       position relative
       text-align right
+      margin-top 20px
       .bage7
         height: 32px;
         width 118px

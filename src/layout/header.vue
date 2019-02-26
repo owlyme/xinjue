@@ -101,6 +101,7 @@ export default {
         color #fff
     &.small
       padding 0 10px
+      min-height 50px
       background #f8f8f8
       .name
         color #000
