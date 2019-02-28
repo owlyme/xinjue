@@ -10,7 +10,7 @@
       </mainTitle>
 
        <b-row class="padding30 bgGray" no-gutters>
-        <b-col xs='12' sm='4' md='4' lg='4'
+        <b-col cols='12' sm='4' md='4' lg='4'
         v-for="(item, index) in wxList" :key="index">
           <card2 v-bind="item"></card2>
         </b-col>

@@ -1,6 +1,6 @@
 <template>
     <div class="qq-card-container">
-        <a target="_blank" :href="`http://wpa.qq.com/msgrd?v=3&amp;uin=${data.qq}&amp;site=qq&amp;menu=yes`">
+        <!-- <a target="_blank" :href="`http://wpa.qq.com/msgrd?v=3&amp;uin=${data.qq}&amp;site=qq&amp;menu=yes`"> -->
         <div class="card-img center-middle">
             <strong class="icon big-icon" v-html="data.icon"></strong>
         </div>
@@ -11,7 +11,7 @@
                 点击咨询
             </button>
         </div>
-        </a>
+        <!-- </a> -->
     </div>
 </template>
 
@@ -38,8 +38,7 @@ export default {
     background #ffffff
 
     &:hover .card-img .big-icon
-        color #ffffff
-        background #e63a3e
+        color #1cab1c
         box-shadow: 0 1px 5px #888888
     a {
         color: #999;
@@ -58,16 +57,13 @@ export default {
     .card-img
         height 120px
         .big-icon
+            color #999
             width: 60px;
             height: 60px;
             font-size: 60px;
             line-height: 60px;
             border-radius: 100%;
-            transition all .1s
-            &:hover
-                color #ffffff
-                background #e63a3e
-                box-shadow: 0 1px 5px #888888
+            transition all .3s
     .card-title
         height 64px
         font-size: 16px;

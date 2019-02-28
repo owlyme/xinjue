@@ -8,7 +8,11 @@
       toggleable="md"
       :type="showToggle ? 'light' : ''"
       :variant="showToggle  ? 'light' : ''" >
-      <b-navbar-brand href="#" class="name">新珏科技</b-navbar-brand>
+      <b-navbar-brand href="#" class="name">
+        <div class="center-middle" style="height:40px; overflow: hidden">
+          <img style="height: 150%" src="../../static/img/logo.jpg" /></div>
+
+      </b-navbar-brand>
 
       <b-navbar-toggle target="nav_collapse" />
 
@@ -95,14 +99,20 @@ export default {
     font-size 12px
     transition all .3s
     &.big
-      padding 20px
+      padding 10px
       background rgba(0,0,0,.4)
       .name, .nav-item-text
         color #fff
+      .router-link-exact-active
+        border-bottom 1px solid #fff
     &.small
       padding 0 10px
       min-height 50px
       background #f8f8f8
+      a.nav-item-text
+        color #777
+      .router-link-exact-active
+        border-bottom 1px solid #777
       .name
         color #000
       .nav-item-text

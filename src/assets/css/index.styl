@@ -1,11 +1,11 @@
 @font-face {
   font-family: 'iconfont';  /* project id 1047474 */
-  src: url('//at.alicdn.com/t/font_1047474_hdm2sq7xbt8.eot');
-  src: url('//at.alicdn.com/t/font_1047474_hdm2sq7xbt8.eot?#iefix') format('embedded-opentype'),
-  url('//at.alicdn.com/t/font_1047474_hdm2sq7xbt8.woff2') format('woff2'),
-  url('//at.alicdn.com/t/font_1047474_hdm2sq7xbt8.woff') format('woff'),
-  url('//at.alicdn.com/t/font_1047474_hdm2sq7xbt8.ttf') format('truetype'),
-  url('//at.alicdn.com/t/font_1047474_hdm2sq7xbt8.svg#iconfont') format('svg');
+  src: url('//at.alicdn.com/t/font_1047474_ar7pddr7raa.eot');
+  src: url('//at.alicdn.com/t/font_1047474_ar7pddr7raa.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_1047474_ar7pddr7raa.woff2') format('woff2'),
+  url('//at.alicdn.com/t/font_1047474_ar7pddr7raa.woff') format('woff'),
+  url('//at.alicdn.com/t/font_1047474_ar7pddr7raa.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_1047474_ar7pddr7raa.svg#iconfont') format('svg');
 }
 .icon {
   font-family: 'iconfont';
@@ -22,11 +22,15 @@ li {
 a {
   text-decoration: none !important;
 }
+
 .center-middle {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+.text-center {
+  text-align: center;
+  }
 .vertical{
   display: flex;
   align-items: center;
@@ -80,6 +84,10 @@ a {
   font-weight: 500;
 .fnw100
   font-weight: 100;
+.fn12
+  font-size: 12px;
+.fn18
+  font-size: 18px
 .fn24
   font-size: 24px;
 
@@ -89,26 +97,91 @@ a {
   left 0
   height 1px
   border-top 1px solid #999
+.main-footer
+  background: #000;
+  color: #aaa;
+  padding: 20px 0;
+  .head
+    font-size: 20px;
+    color #fff
+    span
+      font-size: 12px;
+      margin-left: 6px;
+  .body
+    font-size 14px
+    line-height: 24px;
+  .aboutus
+    margin-bottom: 20px;
+    a
+      color #fff
+  .brand a
+    display block
+    height 30px
+    color: #aaa;
+    &:hover
+      color #fff
+      background #e63a3e
 
+  .second
+    border-top: 1px solid #222;
+    padding-top: 20px;
+    .product
+      text-align right
+      border-left 1px solid #222;
+      a
+        text-decoration: none;
+      dt a
+        font-size 20px
+        color: #fff;
+      dd a
+        display block
+        height 20px
+        font-size 14px
+        color: #aaa;
+        padding-right 0
+        transition all .3s
+        &:hover
+          padding-right 20px
 
+.qrcode-box
+  display: block
+  border-radius 3px
+  box-shadow  0 0 4px #fafafa
+  width: 300px
+  height: 300px
 
 .visible-xs-block,
 .visible-sm-block,
 .visible-md-block,
 .visible-lg-block
   display: none
-@media (min-width: 1200px){
-  .visible-lg-block {
-    display: block!important;
-  }
-}
-@media (min-width: 992px){
-  .visible-md-block {
-    display: block!important;
-  }
-}
+.text-title
+  letter-spacing 0
+  font-size 16px
+
 @media (min-width: 768px){
   .visible-sm-block {
-    display: block!important;
+    display: block !important;
+  }
+  .text-title {
+    letter-spacing: 2px;
+   }
+}
+
+@media (min-width: 992px){
+  .visible-md-block {
+    display: block !important;
+  }
+  .text-title {
+    letter-spacing: 1px;
+  }
+}
+
+@media (min-width: 1200px){
+  .visible-lg-block {
+    display: block !important;
+  }
+  .text-title {
+    letter-spacing: 1px;
   }
 }

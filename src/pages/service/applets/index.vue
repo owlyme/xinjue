@@ -7,10 +7,10 @@
       </mainTitle>
 
       <b-row class="margin30  bgWhite">
-        <b-col xs="12" sm="12" md="6" lg="6">
+        <b-col cols="12" sm="12" md="6" lg="6">
           <img style="width: 100%" src="http://www.hhjtwl.com/templets/hhwl/img/tab4_ssa.jpg" />
         </b-col>
-        <b-col xs="12" sm="12" md="6" lg="6">
+        <b-col cols="12" sm="12" md="6" lg="6">
         <row :data="msg" class="vertical">
           <div slot-scope="{title, text}">
             <div class="text0">{{title}}</div>
@@ -26,7 +26,7 @@
       </mainTitle>
 
       <div class="padding30 bgGray">
-        <row xs='12' sm='6' md='4' :data="fnList">
+        <row cols='12' sm='6' md='4' :data="fnList">
           <card3 slot-scope="item"
             :bgUrl="item.img">
             <div class="text0">{{item.title}}</div>

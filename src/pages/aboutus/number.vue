@@ -2,17 +2,17 @@
     <div class="number">
       <b-row>
         <b-col sm='12' offset-md="2" md="2">
-          <count :endVal="33333">
+          <count :endVal="5">
             <div>年</div>
           </count>
         </b-col>
         <b-col sm='12' md="4">
-          <count :endVal="33333">
+          <count :endVal="1000">
             <div>余件精品案例</div>
           </count>
         </b-col>
         <b-col sm='12' md="2">
-          <count :endVal="33333">
+          <count :endVal="600">
             <div>余家企业</div>
           </count>
         </b-col>

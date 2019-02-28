@@ -5,7 +5,7 @@
     <div slot-scope="item" style="text-align: center">
       <span class="icon color333" v-html="item.icon" style="font-size: 60px;"></span>
       <h2 class="text0">{{item.style}}</h2>
-      <div class="text1" v-for="i in item.info" >
+      <div class="text1" v-for="i in item.info" :key="i" >
         {{i}}
       </div>
     </div>

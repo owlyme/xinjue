@@ -1,7 +1,7 @@
 <template>
   <b-row class="owly-row">
     <b-col
-      :xs='xs' :sm='sm' :md='md' :lg='lg'
+      :cols='xs' :sm='sm' :md='md' :lg='lg'
       v-for="(item, index) in data" :key="index">
       <slot v-bind="item"></slot>
     </b-col>

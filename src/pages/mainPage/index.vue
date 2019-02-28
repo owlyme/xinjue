@@ -39,7 +39,17 @@
         <news-list></news-list>
         <view-more href="www.baidu.com"></view-more>
         </div>
-        <main-footer></main-footer>
+
+        <main-footer>
+          <footerA></footerA>
+          <b-container>
+          <b-row class="second">
+            <b-col><footerC></footerC></b-col>
+            <b-col class="visible-sm-block"><footerS></footerS></b-col>
+          </b-row>
+          </b-container>
+          <footerCr></footerCr>
+        </main-footer>
     </div>
 
 </template>
@@ -57,7 +67,11 @@ export default {
     adBanner: () => import('./AdBanner'),
     viewMore: () => import('@/components/translationUp'),
     solutionList: () => import('./solutionList'),
-    mainFooter: () => import('@/layout/footer')
+    mainFooter: () => import('@/layout/footer'),
+    footerA: () => import('@/components/footer/about'),
+    footerC: () => import('@/components/footer/contact'),
+    footerS: () => import('@/components/footer/service'),
+    footerCr: () => import('@/components/footer/copyRight')
   },
   data () {
     return {

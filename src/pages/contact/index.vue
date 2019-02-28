@@ -1,6 +1,7 @@
 <template>
     <div class="contact-page">
       <main-header nofixed></main-header>
+
       <div class="paddingTop">
         <div class="bgWhite">
         <mainTitle >
@@ -16,7 +17,10 @@
         <qqList></qqList>
         </div>
       </div>
-      <mainFooter></mainFooter>
+      <main-footer>
+        <footerC class="visible-sm-block text-center"></footerC>
+        <footerCr></footerCr>
+      </main-footer>
     </div>
 
 </template>
@@ -29,7 +33,9 @@ export default {
     mainTitle: () => import('@/components/title.vue'),
     contactList: () => import('./contactList'),
     qqList: () => import('./qqList'),
-    mainFooter: () => import('@/layout/footer')
+    mainFooter: () => import('@/layout/footer'),
+    footerC: () => import('@/components/footer/contact'),
+    footerCr: () => import('@/components/footer/copyRight')
   },
   data () {
     return {

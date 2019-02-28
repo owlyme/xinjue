@@ -2,11 +2,11 @@
     <div class="servuice-page bgWhite">
       <main-header></main-header>
       <b-row style="background: #465f87; padding: 60px 0 120px;justify-content: flex-end;">
-        <b-col cols="4" class="visible-md-block visible-lg-block">
+        <b-col sm="4" class="visible-md-block">
           <img style="position: absolute;top: 40px;"
           src="http://www.hhjtwl.com/templets/hhwl/img/banner-pi.png" />
         </b-col>
-        <b-col style="float: right" cols="8" class="padding30">
+        <b-col style="float: right" cols="12" sm="8" class="padding30">
           <h3 class="white text0">一站式互联网+解决方案品牌专家，集聚最雄厚与最专业的技术实力</h3>
           <p class="white">多年技术开发与移动互联网行业经验沉淀，集合对二十多个主流行业的深度研究，从根本出发把握您的实际需求做到开发更快捷、更完善，营销更精准、更高效、并实施落地。</p>
         </b-col>
@@ -25,7 +25,10 @@
       <softdev v-show="activeIndex === 3"></softdev>
       <applets v-show="activeIndex === 4"></applets>
 
-      <mainFooter></mainFooter>
+      <main-footer>
+        <footerC class="visible-sm-block text-center"></footerC>
+        <footerCr></footerCr>
+      </main-footer>
     </div>
 </template>
 
@@ -39,7 +42,9 @@ export default {
     applets: () => import('./applets'),
     siteDev: () => import('./sitedev'),
     wxdev: () => import('./wxdev'),
-    mainFooter: () => import('@/layout/footer')
+    mainFooter: () => import('@/layout/footer'),
+    footerC: () => import('@/components/footer/contact'),
+    footerCr: () => import('@/components/footer/copyRight')
   },
   data () {
     return {

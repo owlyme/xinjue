@@ -7,7 +7,7 @@
                     <div class="inner">
                       <h2 class="title">{{title}}</h2>
                       <span class="short-line"></span>
-                      <p v-for="item in info">{{item}}</p>
+                      <p v-for="item in info" :key="item">{{item}}</p>
                     </div>
                 </div>
             </cover>
