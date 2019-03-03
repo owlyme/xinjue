@@ -32,22 +32,22 @@
             <b-col cols="6" sm="6" md="3" lg="3">
             <span class="icon circle">&#xe6b2;</span>
             <div class="title-1">企业网站定制</div>
-            <a  class="anlie" href="/case/ppgw/">查看案例</a>
+            <router-link class="anlie" to="/case?tab=0">查看案例</router-link>
             </b-col>
             <b-col cols="6" sm="6" md="3" lg="3">
             <span class="icon circle">&#xe631;</span>
             <div class="title-1">商城门户开发</div>
-            <a  class="anlie" href="/case/scmh/ circle">查看案例</a>
+            <router-link class="anlie" to="/case?tab=1">查看案例</router-link>
             </b-col>
             <b-col cols="6" sm="6" md="3" lg="3">
             <span class="icon circle">&#xe62f;</span>
             <div class="title-1">移动应用定制</div>
-            <a class="anlie" href="/case/ydyy/">查看案例</a>
+            <router-link class="anlie" to="/case?tab=2">查看案例</router-link>
             </b-col>
             <b-col cols="6" sm="6" md="3" lg="3">
             <span class="icon circle">&#xe65a;</span>
             <div class="title-1">HTML5</div>
-            <a class="anlie" href="/case/HTML5/">查看案例</a>
+            <router-link class="anlie" to="/case?tab=3">查看案例</router-link>
             </b-col>
           </b-row>
         </div>
@@ -164,7 +164,6 @@ export default {
   components: {
     mainTitle: () => import('@/components/title'),
     card1: () => import('@/components/card1')
-
   },
   data () {
     return {

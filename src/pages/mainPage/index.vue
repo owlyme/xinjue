@@ -1,6 +1,5 @@
 <template>
     <div class="main-page">
-        <main-header></main-header>
         <carousel></carousel>
         <div class="padding">
         <main-title>
@@ -18,6 +17,7 @@
           <p>我们做网站更懂百度，我们更懂精准营销，我们在网站方面更懂你</p>
           <casList></casList>
         </main-title>
+
         <ad-banner></ad-banner>
 
         <view-more url="/aboutus"></view-more>
@@ -30,26 +30,15 @@
         </main-title>
         <solutionList></solutionList>
 
-        <main-title bgColor="none">
+        <!-- <main-title bgColor="none">
           <h1>NEWS</h1>
           <h2>新闻资讯</h2>
           <h2>专业的网络品牌塑造者，网络品牌设计服务机构</h2>
           <p>提供网站建设相关资讯、互联网行业资讯、网站设计知识、空间域名邮箱、网站解决方案、常见问题等</p>
         </main-title>
         <news-list></news-list>
-        <view-more href="www.baidu.com"></view-more>
+        <view-more href="www.baidu.com"></view-more> -->
         </div>
-
-        <main-footer>
-          <footerA></footerA>
-          <b-container>
-          <b-row class="second">
-            <b-col><footerC></footerC></b-col>
-            <b-col class="visible-sm-block"><footerS></footerS></b-col>
-          </b-row>
-          </b-container>
-          <footerCr></footerCr>
-        </main-footer>
     </div>
 
 </template>
@@ -58,7 +47,6 @@
 export default {
   name: 'main-page',
   components: {
-    mainHeader: () => import('@/layout/header'),
     carousel: () => import('./carousel'),
     mainTitle: () => import('@/components/title'),
     casList: () => import('./casList'),
@@ -66,12 +54,7 @@ export default {
     newsList: () => import('./newsList'),
     adBanner: () => import('./AdBanner'),
     viewMore: () => import('@/components/translationUp'),
-    solutionList: () => import('./solutionList'),
-    mainFooter: () => import('@/layout/footer'),
-    footerA: () => import('@/components/footer/about'),
-    footerC: () => import('@/components/footer/contact'),
-    footerS: () => import('@/components/footer/service'),
-    footerCr: () => import('@/components/footer/copyRight')
+    solutionList: () => import('./solutionList')
   },
   data () {
     return {

@@ -10,7 +10,7 @@
       :variant="showToggle  ? 'light' : ''" >
       <b-navbar-brand href="#" class="name">
         <div class="center-middle" style="height:40px; overflow: hidden">
-          <img style="height: 150%" src="../../static/img/logo.jpg" /></div>
+          <img style="height: 150%" src="../../static/img/logo.png" /></div>
 
       </b-navbar-brand>
 
@@ -32,6 +32,11 @@
           <b-nav-item href="#" >
               <grow height="1" :bgColor="growBg" :color="growColor" class='nav-item'>
                   <router-link class="nav-item-text" to="/service">服务项目</router-link>
+              </grow>
+          </b-nav-item>
+          <b-nav-item href="#" >
+              <grow height="1" :bgColor="growBg" :color="growColor" class='nav-item'>
+                  <router-link class="nav-item-text" to="/case">客户案列</router-link>
               </grow>
           </b-nav-item>
           <b-nav-item href="#" >
@@ -98,7 +103,13 @@ export default {
     left 0
     font-size 12px
     transition all .3s
+    .nav-item-text
+      height: 30px
+      padding 0 10px
+      display block
+      text-align center
     &.big
+      position fixed
       padding 10px
       background rgba(0,0,0,.4)
       .name, .nav-item-text
@@ -106,6 +117,7 @@ export default {
       .router-link-exact-active
         border-bottom 1px solid #fff
     &.small
+      position fixed
       padding 0 10px
       min-height 50px
       background #f8f8f8
@@ -132,5 +144,4 @@ export default {
           vertical-align: middle;
           content: "";
           background-size: 100% 100%;
-
 </style>

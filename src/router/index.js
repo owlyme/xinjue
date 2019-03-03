@@ -23,7 +23,7 @@ export default new Router({
     {
       path: '/case',
       name: 'case',
-      component: () => import('@/pages/mainPage/index.vue')
+      component: () => import('@/pages/case/index.vue')
     },
     {
       path: '/news',
@@ -34,6 +34,13 @@ export default new Router({
       path: '/contact',
       name: 'contact',
       component: () => import('@/pages/contact/index.vue')
+    },
+    {
+      path: '*',
+      redirect: '/'
     }
-  ]
+  ],
+  scrollBehavior (to, from) {
+    return { x: 0, y: 0 }
+  }
 })

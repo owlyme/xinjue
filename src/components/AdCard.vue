@@ -1,5 +1,5 @@
 <template>
-    <div refs="box" class="ad-card">
+    <div refs="box" class="ad-card pointer" @click="goCorpPage(info.url)">
         <!--  -->
         <div ref="adimg" class="ad-card-img" :style="style">
             <img :src="info.src" alt="">
@@ -7,7 +7,7 @@
         <div class="ad-card-info">
             <div class="ad-card-name">{{info.corpName}}</div>
             <div class="ad-card-time">{{info.time}}</div>
-            <div class="ad-card-link" @click="goCorpPage">
+            <div class="ad-card-link pointer">
                 <span class="icon">&#xe615;</span>
             </div>
         </div>
@@ -26,16 +26,21 @@ export default {
     bgColor: {
       type: String,
       default: () => '#f00'
+    },
+    info: {
+      type: Object,
+      default: () => {
+        return {
+          src: 'http://pic31.nipic.com/20130802/13163193_145819676170_2.jpg',
+          corpName: '新珏',
+          time: '2019-01-12',
+          url: 'www.badi.com'
+        }
+      }
     }
   },
   data () {
     return {
-      info: {
-        src: 'http://pic31.nipic.com/20130802/13163193_145819676170_2.jpg',
-        corpName: '新珏',
-        time: '2019-01-12',
-        url: 'www.badi.com'
-      },
       style: {}
     }
   },
@@ -50,7 +55,7 @@ export default {
       this.style = {height: height}
     },
     goCorpPage (url) {
-      window.location.href = 'http://www.baidu.com'
+      window.location.href = url
     }
   }
 }

@@ -1,6 +1,5 @@
 <template>
     <div class="servuice-page bgWhite">
-      <main-header></main-header>
       <b-row style="background: #465f87; padding: 60px 0 120px;justify-content: flex-end;">
         <b-col sm="4" class="visible-md-block">
           <img style="position: absolute;top: 40px;"
@@ -24,11 +23,6 @@
       <wxdev v-show="activeIndex === 2"></wxdev>
       <softdev v-show="activeIndex === 3"></softdev>
       <applets v-show="activeIndex === 4"></applets>
-
-      <main-footer>
-        <footerC class="visible-sm-block text-center"></footerC>
-        <footerCr></footerCr>
-      </main-footer>
     </div>
 </template>
 
@@ -36,15 +30,11 @@
 export default {
   name: 'servuice-page',
   components: {
-    mainHeader: () => import('@/layout/header'),
     appdev: () => import('./appdev'),
     softdev: () => import('./softdev'),
     applets: () => import('./applets'),
     siteDev: () => import('./sitedev'),
-    wxdev: () => import('./wxdev'),
-    mainFooter: () => import('@/layout/footer'),
-    footerC: () => import('@/components/footer/contact'),
-    footerCr: () => import('@/components/footer/copyRight')
+    wxdev: () => import('./wxdev')
   },
   data () {
     return {
@@ -52,11 +42,15 @@ export default {
     }
   },
   mounted () {
-
+    this.setBage()
   },
   methods: {
     setBage (index) {
-      this.activeIndex = index
+      if (index !== undefined) {
+        this.activeIndex = index
+      } else {
+        this.activeIndex = parseInt(this.$route.query.tab || 0)
+      }
     }
   }
 

@@ -1,6 +1,5 @@
 <template>
     <div class="about-page">
-      <main-header nofixed></main-header>
       <div class="info1">
         <div class="tit"> 互联网整体解决方案服务商 </div>
         <div class="intro">
@@ -38,15 +37,8 @@
           </div>
           <!-- <team style="margin: 60px 0"></team> -->
           <customer style="margin: 60px 0 0"></customer>
-          <div>
-
-          </div>
         </div>
       </div>
-      <main-footer>
-        <footerC class="visible-sm-block text-center"></footerC>
-        <footerCr></footerCr>
-      </main-footer>
 
     </div>
 
@@ -56,13 +48,9 @@
 export default {
   name: 'about-page',
   components: {
-    mainHeader: () => import('@/layout/header'),
     number: () => import('./number'),
     team: () => import('./team'),
-    customer: () => import('./customer'),
-    mainFooter: () => import('@/layout/footer'),
-    footerC: () => import('@/components/footer/contact'),
-    footerCr: () => import('@/components/footer/copyRight')
+    customer: () => import('./customer')
   },
   data () {
     return {

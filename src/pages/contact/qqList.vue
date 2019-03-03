@@ -28,7 +28,7 @@ export default {
           title: '业务咨询',
           info: '有网站、微信、APP、软件开发、网站优化推广需求的客户请联系',
           qq: '1158881764@qq.com',
-          qrCode: 'http://pic.qingting.fm/2018/0421/20180421072635816190.jpg%21800'
+          qrCode: '../../../static/img/qrCode.png'
         },
         {
           icon: '&#xe60b;',
@@ -36,7 +36,7 @@ export default {
           title: '售后服务',
           info: '有网站优化或续费需求的客户请联系',
           qq: '13340043530@163.com',
-          qrCode: 'http://pic.qingting.fm/2018/0421/20180421072635816190.jpg%21800'
+          qrCode: '../../../static/img/qrCode.png'
         },
         {
           icon: '&#xe60b;',
@@ -44,7 +44,7 @@ export default {
           title: '开发维护',
           info: '有网站、微信、APP、软件开发、网站后期维护的需求的客户请联系',
           qq: '1158881764@qq.com',
-          qrCode: 'http://pic.qingting.fm/2018/0421/20180421072635816190.jpg%21800'
+          qrCode: '../../../static/img/qrCode.png'
 
         },
         {
@@ -53,7 +53,7 @@ export default {
           title: '空间域名备案的客户请联系',
           info: '空间域名备案的客户请联系/餐饮/O2O等多场景定制化需求。',
           qq: '13340043530@163.com',
-          qrCode: 'http://pic.qingting.fm/2018/0421/20180421072635816190.jpg%21800'
+          qrCode: '../../../static/img/qrCode.png'
 
         }
       ]

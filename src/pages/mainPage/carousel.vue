@@ -13,9 +13,11 @@ export default {
   },
   data () {
     return {
-      imgs: [ '../../static/img/mainpage/banner1.jpeg',
-        '../../static/img/mainpage/banner2.jpeg',
-        '../../static/img/mainpage/banner3.jpeg' ]
+      imgs: [
+        '../../static/img/mainpage/banner/banner1.jpeg',
+        '../../static/img/mainpage/banner/banner3.jpeg',
+        '../../static/img/mainpage/banner/banner2.jpeg'
+      ]
     }
   },
   mounted () {

@@ -3,10 +3,10 @@
     <b-row class="product">
       <b-col sm="12" md="6">
         <dt><a href="javascript:">服务</a></dt>
-        <dd><router-link to="/service/#tab1">企业网站建设</router-link></dd>
-        <dd><router-link to="/service/#tab2">APP/微信开发</router-link></dd>
-        <dd><router-link to="/service/#tab6">软件开发</router-link></dd>
-        <dd><router-link to="/service/#tab4">小程序开发</router-link></dd>
+        <dd><router-link to="/service?tab=0">企业网站建设</router-link></dd>
+        <dd><router-link to="/service?tab=1">APP/微信开发</router-link></dd>
+        <dd><router-link to="/service?tab=2">软件开发</router-link></dd>
+        <dd><router-link to="/service?tab=3">小程序开发</router-link></dd>
       </b-col>
       <!-- <b-col sm="12" md="6">
         <dt><a href="javascript:">案例</a></dt>

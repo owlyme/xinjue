@@ -16,7 +16,7 @@ export default {
       data: [
         {
           title: '食品安全APP',
-          imgSrc: 'http://pic31.nipic.com/20130802/13163193_145819676170_2.jpg',
+          imgSrc: '../../../static/img/solution/01.png',
           info: ['食品安全APP是食品WiFi无线控制管理平台通过',
             '无线触摸面板与移动终端APP',
             '控制各种智能设备并实现仪器数据之间的互联互',
@@ -26,7 +26,7 @@ export default {
         },
         {
           title: '智慧出行app',
-          imgSrc: 'http://pic31.nipic.com/20130802/13163193_145819676170_2.jpg',
+          imgSrc: '../../../static/img/solution/02.png',
           info: ['基于用户位置提供个性化的交通信息服务',
             '无线触摸面板与移动终端APP',
             '向各类用户提供交通信息服务',
@@ -37,7 +37,7 @@ export default {
         },
         {
           title: '智慧阅读APP',
-          imgSrc: 'http://pic31.nipic.com/20130802/13163193_145819676170_2.jpg',
+          imgSrc: '../../../static/img/solution/03.png',
           info: ['【扫码借书】：一键扫码，即可轻松把新书从书店借走。',
             '【极简体验】：精致书籍排版，定制化您的阅读喜好。',
             '【书友互动】：交流阅读感受，探讨阅读之美'
@@ -46,7 +46,7 @@ export default {
         },
         {
           title: '美食餐饮APP',
-          imgSrc: 'http://pic31.nipic.com/20130802/13163193_145819676170_2.jpg',
+          imgSrc: '../../../static/img/solution/04.png',
           info: ['美食餐饮APP是商家点餐等位呼叫服务的中心',
             '资讯导航,美食展示',
             '订位点餐',

@@ -1,9 +1,10 @@
 <template>
-    <div class="flux7">
+    <div class="flux7" >
         <vue-flux
         :options="fluxOptions"
         :images="imgs"
         :transitions="fluxTransitions"
+        :style="{height: fluxHeight + 'px'}"
         ref="slider">
             <flux-pagination slot="pagination"></flux-pagination>
         </vue-flux>
@@ -14,7 +15,7 @@
 
 <script>
 import { VueFlux, FluxPagination, Transitions } from 'vue-flux'
-// import windowResize from '@/utils/domEvent.js'
+import windowResize from '@/utils/domEvent.js'
 
 export default {
   components: {
@@ -39,9 +40,10 @@ export default {
     }
   },
   mounted () {
-    // windowResize(this.resetSize)
+    windowResize(this.resetSize)
   },
   data: () => ({
+    fluxHeight: (document.body.clientWidth || document.documentElement.clientWidth) * 700 / 1920,
     fluxOptions: {
       autoplay: true,
       bindKeys: true
@@ -98,6 +100,7 @@ export default {
   methods: {
     resetSize () {
       this.width = document.body.clientWidth || document.documentElement.clientWidth
+      this.fluxHeight = this.width * 700 / 1920
     },
     next () {
       this.$refs.slider.showImage('next')
@@ -110,14 +113,14 @@ export default {
 </script>
 
 <style>
-    .flux7 .vue-flux .flux-pagination li span.pagination-item {
-        display: inline-block;
-        width: 8px !important;
-        height: 8px !important;
-        border: 1px solid #fff;
-        border-radius: 50%;
-        background-color: rgba(0,0,0,.7);
-        -webkit-transition: background-color .2s ease-in,border .2s ease-in;
-        transition: background-color .2s ease-in,border .2s ease-in;
-    }
+  .flux7 .vue-flux .flux-pagination li span.pagination-item {
+      display: inline-block;
+      width: 8px !important;
+      height: 8px !important;
+      border: 1px solid #fff;
+      border-radius: 50%;
+      background-color: rgba(0,0,0,.7);
+      -webkit-transition: background-color .2s ease-in,border .2s ease-in;
+      transition: background-color .2s ease-in,border .2s ease-in;
+  }
 </style>
