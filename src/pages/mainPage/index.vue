@@ -30,14 +30,6 @@
         </main-title>
         <solutionList></solutionList>
 
-        <!-- <main-title bgColor="none">
-          <h1>NEWS</h1>
-          <h2>新闻资讯</h2>
-          <h2>专业的网络品牌塑造者，网络品牌设计服务机构</h2>
-          <p>提供网站建设相关资讯、互联网行业资讯、网站设计知识、空间域名邮箱、网站解决方案、常见问题等</p>
-        </main-title>
-        <news-list></news-list>
-        <view-more href="www.baidu.com"></view-more> -->
         </div>
     </div>
 

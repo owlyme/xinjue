@@ -27,7 +27,7 @@
         <dt><a href="javascript:">了解我们</a></dt>
         <dd><router-link to="/aboutus">我们是谁</router-link></dd>
         <dd><router-link to="/aboutus">我们的优势</router-link></dd>
-        <dd><router-link to="/aboutus">我们的团队</router-link></dd>
+        <dd><router-link to="/aboutus">我们服务的客户</router-link></dd>
         <dd><router-link to="/aboutus">办公环境</router-link></dd>
         <dd><router-link to="/aboutus">荣誉资质</router-link></dd>
       </b-col>

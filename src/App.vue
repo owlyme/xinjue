@@ -10,9 +10,13 @@
           <footerA></footerA>
           <b-container>
           <b-row class="second">
-            <b-col><footerC></footerC></b-col>
+            <b-col>
+              <footerC></footerC>
+              <footerCr :showImg="false"></footerCr>
+            </b-col>
             <b-col class="visible-sm-block"><footerS></footerS></b-col>
           </b-row>
+
           </b-container>
         </template>
         <template v-else>

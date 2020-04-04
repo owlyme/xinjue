@@ -15,18 +15,17 @@ export default {
     return {
       data: [
         {
-          title: '食品安全APP',
+          title: '智控管家APP',
           imgSrc: '../../../static/img/solution/01.png',
-          info: ['食品安全APP是食品WiFi无线控制管理平台通过',
+          info: ['是家中电器设备控制管理平台通过',
             '无线触摸面板与移动终端APP',
-            '控制各种智能设备并实现仪器数据之间的互联互',
-            '从而检测食品安全保证食品的安全放心'
+            '控制各种智能设备并实现设备之间的互联互'
           ],
           url: ''
         },
         {
           title: '智慧出行app',
-          imgSrc: '../../../static/img/solution/02.png',
+          imgSrc: '../../../static/img/solution/04.png',
           info: ['基于用户位置提供个性化的交通信息服务',
             '无线触摸面板与移动终端APP',
             '向各类用户提供交通信息服务',
@@ -46,7 +45,7 @@ export default {
         },
         {
           title: '美食餐饮APP',
-          imgSrc: '../../../static/img/solution/04.png',
+          imgSrc: '../../../static/img/solution/05.png',
           info: ['美食餐饮APP是商家点餐等位呼叫服务的中心',
             '资讯导航,美食展示',
             '订位点餐',
